@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2014 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/tmptmptmp53451/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -41,8 +41,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	pb "github.com/golang/protobuf/proto/test_proto"
+	"github.com/tmptmptmp53451/protobuf/proto"
+	pb "github.com/tmptmptmp53451/protobuf/proto/test_proto"
 )
 
 func TestGetExtensionsWithMissingExtensions(t *testing.T) {

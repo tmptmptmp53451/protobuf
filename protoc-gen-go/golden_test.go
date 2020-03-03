@@ -148,8 +148,8 @@ func TestParameters(t *testing.T) {
 		wantPackageA: "alpha",
 		wantPackageB: "test_beta",
 		wantImportsA: map[string]bool{
-			"github.com/golang/protobuf/proto": true,
-			"beta":                             true,
+			"github.com/tmptmptmp53451/protobuf/proto": true,
+			"beta": true,
 		},
 	}, {
 		parameters: "import_prefix=prefix",
@@ -161,8 +161,8 @@ func TestParameters(t *testing.T) {
 		wantPackageB: "test_beta",
 		wantImportsA: map[string]bool{
 			// This really doesn't seem like useful behavior.
-			"prefixgithub.com/golang/protobuf/proto": true,
-			"prefixbeta":                             true,
+			"prefixgithub.com/tmptmptmp53451/protobuf/proto": true,
+			"prefixbeta": true,
 		},
 	}, {
 		// import_path only affects the 'package' line.
@@ -182,7 +182,7 @@ func TestParameters(t *testing.T) {
 		wantPackageA: "alpha",
 		wantPackageB: "test_beta",
 		wantImportsA: map[string]bool{
-			"github.com/golang/protobuf/proto": true,
+			"github.com/tmptmptmp53451/protobuf/proto": true,
 			// Rewritten by the M parameter.
 			"package/gamma": true,
 		},
